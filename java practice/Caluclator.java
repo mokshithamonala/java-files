@@ -1,29 +1,20 @@
-public class Caluclator{
-    public int add(int a, int b){
-         int add=a+b;
-        return add;
+public class Calculator { 
+    public int add(int a, int b) {
+        return a + b;
     }
-    public int subtract(int a,int b){
-         int subtract=a-b;
-        return subtract;
+    
+    public double add(double a, double b) {
+        return a + b;
     }
-    public int multiply(int a,int b){
-         int multiply=a*b;
-         return multiply;
+    
+    public int add(int a, int b, int c) {
+        return a + b + c;
     }
-    public float divide(int a,int b){
-         int divide=a/b;
-        return divide;
-    }
-    public static void main(String args[]){
-    Caluclator obj=new Caluclator();
-    int add=obj.add(1,2);
-    int subtract=obj.subtract(10,2);
-    int multiply=obj.multiply(2,3);
-    float divide=obj.divide(10,2);
-    System.out.println("add:"+add);
-    System.out.println("subtract:"+subtract);
-    System.out.println("multiply:"+multiply);
-    System.out.println("divide:"+divide);
+
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println("Sum: " + calc.add(20, 50)); 
+        System.out.println("Sum of 3.5 and 6.2: " + calc.add(3.5, 6.2));
+        System.out.println("Sum of 20, 30 and 20: " + calc.add(20, 30, 20));
     }
 }
