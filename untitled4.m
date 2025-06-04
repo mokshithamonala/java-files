@@ -1,0 +1,13 @@
+A=[1 0.5;-0.5 1];
+square=[0 1 1 0 0;0 0 1 1 0];
+transformed=A*square;
+figure;
+subplot(1,2,1);
+fill(square(1,:),square(2,:),'b-','linewidth',2);
+title('original square');
+axis equal;
+grid on;
+subplot(1,2,2);
+fill(transformed(1,:),transformed(2,:),'r-','linewidth',2);
+title('transformed square');
+axis equal;
